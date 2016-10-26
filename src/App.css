@@ -1,0 +1,13 @@
+.siteInput input, .siteInput label {
+  text-align: center !important;
+  font-size: 24px !important;
+  width: 100%;
+}
+
+.recaptcha > div {
+  /*text-align: center;*/
+  margin: auto;
+  border-radius: 20px;
+  margin-top: 10px; 
+  margin-bottom: 30px; 
+}
