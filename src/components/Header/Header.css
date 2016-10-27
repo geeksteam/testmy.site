@@ -1,0 +1,17 @@
+/*.header-logo img {
+    margin: auto !important;
+}*/
+/*
+.header-logo {
+    text-align: center;
+}*/
+
+.header-logo {
+    margin-top: 30px !important;
+    margin: auto;
+}
+
+.header-logo img {
+    margin-bottom: 30px !important;
+    width: 100%;
+}

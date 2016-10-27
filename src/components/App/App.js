@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import SiteForm from "./components/SiteForm";
+import SiteForm from "./../SiteForm/SiteForm";
 import './App.css';
 
 class App extends Component {

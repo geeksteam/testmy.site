@@ -1,17 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from "react-redux";
-import store from "./state";
+import store from "./store/state";
 
 import 'react-mdl/extra/material.css';
 import 'react-mdl/extra/material.js';
 
-import App from './App';
+import App from './components/App/App';
 import './index.css';
 
 store.subscribe(() => console.log('new state', store.getState()));
 
 ReactDOM.render(
-  <App />,
+  <Provider store={store}>
+    <App />
+  </Provider>,
   document.getElementById('root')
 );

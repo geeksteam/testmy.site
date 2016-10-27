@@ -1,0 +1,36 @@
+.siteInput input, .siteInput label {
+  text-align: center !important;
+  font-size: 24px !important;
+  width: 100%;
+}
+
+.recaptcha > div {
+  /*text-align: center;*/
+  margin: auto;
+  border-radius: 20px;
+  margin-top: 10px; 
+  margin-bottom: 30px; 
+}
+
+.test-bottom {
+  background-color: #f5a623 !important;
+}
+
+.hidden {
+  visibility: hidden !important;
+}
+
+.show {
+  visibility: visible;
+  animation-name: example;
+  animation-duration: 0.5s;
+}
+
+@keyframes example { 
+  0% {transform: translateY(-100px); opacity: 0;}
+  100% {transform: translateY(0px); opacity: 1;}
+}
+
+.header-logo {
+  text-align: center !important;
+}

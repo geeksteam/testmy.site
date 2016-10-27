@@ -1,0 +1,12 @@
+.result-list li:nth-child(1n) {
+    background-color: #2f373e;
+}
+
+.result-list li:nth-child(2n) {
+    background-color: #353f46;
+}
+
+/*
+#353f46
+#2f373e
+*/
