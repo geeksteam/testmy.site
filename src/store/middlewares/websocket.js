@@ -13,6 +13,10 @@ const middleware = store => next => action => {
             console.log('response', JSON.parse(e.data));
             next({type: "ADD_RESPONSE", payload: JSON.parse(e.data)});
         }
+        socket.onclose = () => {
+            console.log('connection closed');
+            next({type: "CHANGE_STATUS", payload: "finished"});
+        }
     }
     // return {type: "CHANGE_STATUS", payload: "loading"};
 }
