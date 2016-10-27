@@ -71,7 +71,7 @@ class SiteForm extends React.Component {
                     </div>
                 </Cell>
                 <Cell col={8} offsetDesktop={2}>
-                    <ResultList status={this.props.status} />
+                    <ResultList status={this.props.status} response={this.props.response} />
                 </Cell>
             </Grid>
         );
@@ -80,7 +80,8 @@ class SiteForm extends React.Component {
 
 function mapStateToProps(state) {
     return {
-        status: state.changeStatusReducer.status
+        status: state.changeStatusReducer.status,
+        response: state.addReSponseReducer
     };
 }
 

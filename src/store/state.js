@@ -6,9 +6,7 @@ const reducer = combineReducers(reducers);
 
 let createStoreWithMiddleWare = applyMiddleware(wsMiddleware)(createStore);
 
-const store = createStoreWithMiddleWare(reducer, {
-    responses: []
-});
+const store = createStoreWithMiddleWare(reducer);
 
 
 export default store;
