@@ -22,18 +22,19 @@
 
 .color-green {
 	color: #7ed321;
-	padding-right: 0px !important;
+	/*padding-right: 0px !important;*/
 	text-align: right !important;
 }
 
 .color-blue {
 	color: #506d92;
-	padding-right: 0px !important;
+	/*padding-right: 0px !important;*/
 	text-align: right !important;
 }
 
 .color-red {
 	color: #f00;
-	padding-right: 0px !important;
-	text-align: right !important;
+	margin-right: 20px;
+	/*padding-right: 0px !important;*/
+	/*text-align: right !important;*/
 }
