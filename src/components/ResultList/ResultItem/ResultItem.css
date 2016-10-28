@@ -1,8 +1,39 @@
 .result-item {
-    height: 230px;
-    color: #fff !important;
+	height: 230px;
+	color: #fff !important;
+}
+
+.result-item > div {
+	width: 100% !important;    
 }
 
 .item-content div {
 	/*margin: auto;*/
+}
+
+.item-img {
+	text-align: right;
+	padding-right: 15px;
+}
+
+.item-text {
+
+}
+
+.color-green {
+	color: #7ed321;
+	padding-right: 0px !important;
+	text-align: right !important;
+}
+
+.color-blue {
+	color: #506d92;
+	padding-right: 0px !important;
+	text-align: right !important;
+}
+
+.color-red {
+	color: #f00;
+	padding-right: 0px !important;
+	text-align: right !important;
 }
