@@ -51,33 +51,33 @@ class SiteForm extends React.Component {
 		// console.log(this.state);
 		return(
 			<div>
-			<Grid>
-				<Cell col={6} tablet={8} phone={8} offsetDesktop={3} offsetTablet={0} offsetPhone={0}>
-					<Header className="header-logo" />
-					 
-					 <Textfield  label="http://website.com" 
-						className="siteInput" style={{width: '100%'}} 
-						onChange={this.changeInput}
-						onClick={this.changeVisibility} />
-					 <div className={this.state.className}>
-						<Recaptcha 
-							sitekey="6LcsCQgUAAAAADadVxDgjNYFlbBk2NWpGPSPsXgh" 
-							ref="recaptcha"
-							onChange={this.changeRecaptcha}
-							className="recaptcha"
-							/>
-						<div style={{textAlign: 'center'}}>
-							<Button raised accent onClick={this.onSubmitHandler} className="test-bottom">Test It</Button>
+				<Grid>
+					<Cell col={6} tablet={8} phone={8} offsetDesktop={3} offsetTablet={0} offsetPhone={0}>
+						<Header className="header-logo" />
+							
+							<Textfield  label="http://website.com" 
+							className="siteInput" style={{width: '100%'}} 
+							onChange={this.changeInput}
+							onClick={this.changeVisibility} />
+							<div className={this.state.className}>
+							<Recaptcha 
+								sitekey="6LcsCQgUAAAAADadVxDgjNYFlbBk2NWpGPSPsXgh" 
+								ref="recaptcha"
+								onChange={this.changeRecaptcha}
+								className="recaptcha"
+								/>
+							<div style={{textAlign: 'center'}}>
+								<Button raised accent onClick={this.onSubmitHandler} className="test-bottom">Test It</Button>
+							</div>
 						</div>
-					</div>
-				</Cell>
-			</Grid>
+					</Cell>
+				</Grid>
 
-			<Grid>
-				<Cell col={8} offsetDesktop={2} phone={8} tablet={8} offsetPhone={2} offsetTablet={2} >
-					<ResultList status={this.props.status} response={this.props.response} />
-				</Cell>
-			</Grid>
+				<Grid>
+					<Cell col={8} offsetDesktop={2} phone={4} tablet={8} >
+						<ResultList status={this.props.status} response={this.props.response} />
+					</Cell>
+				</Grid>
 			</div>
 		);
 	}

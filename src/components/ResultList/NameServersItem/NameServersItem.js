@@ -1,5 +1,5 @@
 import React from "react";
-import { ListItem, Grid, Cell } from "react-mdl";
+import { ListItem, Grid, Cell, Spinner } from "react-mdl";
 import "./../ResultItem.css";
 
 export default class NameServersItem extends React.Component {
@@ -21,18 +21,17 @@ export default class NameServersItem extends React.Component {
 			}
 		];
 	}
-	render = () => {
-		let iconStatus = "",
-			imgStatus = "",
-			textStatus = "";
+	render = () => {;
 		
 		switch(this.props.status) {
 			default:
 				return(
 					<ListItem className="result-item">
 						<Grid>
-							<Cell col={5} phone={5} tablet={5} className="item-img"><img src={this.names[0].img} /></Cell>
-							<Cell col={7} phone={7} tablet={7} className="item-text">
+							<Cell col={5} phone={2} tablet={4} className="item-img">
+								<h5><img src={this.names[0].img} alt="icon-dns" /></h5>
+							</Cell>
+							<Cell col={7} phone={2} tablet={4} className="item-text item-default">
 								<h5>{this.names[0].header}</h5>
 								<p>{this.names[0].body}</p>
 							</Cell>
@@ -43,9 +42,11 @@ export default class NameServersItem extends React.Component {
 				return(
 					<ListItem className="result-item">
 						<Grid>
-							<Cell col={5} phone={5} tablet={5} className="item-img"><img src={this.names[1].img} /></Cell>
-							<Cell col={7} phone={7} tablet={7} className="item-text">
-								<h5><i className='material-icons color-blue'>autorenew</i>{this.names[1].header}</h5>
+							<Cell col={5} phone={2} tablet={4} className="item-img">
+								<h5><img src={this.names[1].img} alt="icon-dns" /></h5>
+							</Cell>
+							<Cell col={7} phone={2} tablet={4} className="item-text">
+								<h5><Spinner singleColor className="color-blue" />{this.names[1].header}</h5>
 							</Cell>
 						</Grid>
 					</ListItem>
@@ -67,14 +68,14 @@ export default class NameServersItem extends React.Component {
 				return(
 					<ListItem className="result-item">
 						<Grid>
-							<Cell col={5} phone={5} tablet={5} className="item-img"><img src={this.names[1].img} /></Cell>
-							<Cell col={7} phone={7} tablet={7} className="item-text">
-								<h5>{icon}{this.names[1].header}</h5>
-							
+							<Cell col={5} phone={2} tablet={4} className="item-img">
+								<h5><img src={this.names[1].img} alt="icon-dns" /></h5>
+							</Cell>
+							<Cell col={7} phone={2} tablet={4} className="item-text">
+								<h5>{icon}<span>{this.names[1].header}</span></h5>
 									<ul>
 										{result}
 									</ul>
-								
 							</Cell>
 						</Grid>
 					</ListItem>

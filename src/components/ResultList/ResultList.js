@@ -2,6 +2,9 @@ import React from "react";
 import { List} from "react-mdl";
 // import ResultItem from "./ResultItem/ResultItem";
 import NameServersItem from "./NameServersItem/NameServersItem";
+import DNSItem from "./DNSItem/DNSItem";
+import CloudCheckerItem from "./CloudCheckerItem/CloudCheckerItem";
+import SpamCheckItem from "./SpamCheckItem/SpamCheckItem";
 import "./ResultList.css";
 
 export default class ResultList extends React.Component {
@@ -71,6 +74,9 @@ export default class ResultList extends React.Component {
 		return(
 			<List className="result-list">
 				<NameServersItem status={this.props.status} result={this.props.response.DNS} />
+				<DNSItem status={this.props.status} result={this.props.response.DNS} />
+				<CloudCheckerItem status={this.props.status} result={this.props.response.CloudChecker} />
+				<SpamCheckItem status={this.props.status} result={this.props.response.SpamCheck} />
 			</List>
 		);
 
